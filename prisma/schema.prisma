@@ -1,0 +1,11 @@
+generator client {
+  provider        = "prisma-client-js"
+  output          = "../src/generated/prisma"
+  previewFeatures = ["driverAdapters"]
+}
+
+model Navigation {
+  id        Int      @id @default(autoincrement())
+  name      String
+  url       String
+}

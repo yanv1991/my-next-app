@@ -5,9 +5,15 @@ declare namespace Cloudflare {
 	interface Env {
 		NEXTJS_ENV: string;
 		ASSETS: Fetcher;
+		GOOGLE_MAPS_API_KEY: string;
+        AI_WORKER_API_KEY: string;
 	}
 }
-interface CloudflareEnv extends Cloudflare.Env {}
+interface CloudflareEnv extends Cloudflare.Env {
+    CACHE: any;
+    COUNTER: DurableObjectNamespace;
+    prisma_demo_db: D1Database;
+}
 
 // Begin runtime types
 /*! *****************************************************************************

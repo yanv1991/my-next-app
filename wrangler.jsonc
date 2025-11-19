@@ -17,7 +17,35 @@
 	},
 	"observability": {
 		"enabled": true
-	}
+	},
+	"kv_namespaces": [
+		{
+			"binding": "CACHE",
+			"id": "d4d954e072cf432d88ee03e4e35ea4c0"
+		}
+	],
+	"d1_databases": [
+		{
+			"binding": "prisma_demo_db",
+			"database_name": "prisma-demo-db",
+			"database_id": "d7b28694-0859-47f1-8282-a5068efcb1bc"
+		}
+	],
+	/*"durable_objects": {
+		"bindings": [
+			{
+				"name": "COUNTER",
+				"class_name": "Counter"
+			}
+		]
+	},*/
+	/* "migrations": [
+		{
+			"tag": "v1",
+			"new_classes": ["Counter"],
+		}
+	]
+	*/
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
@@ -33,7 +61,7 @@
 	 * Environment Variables
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
 	 */
-	// "vars": { "MY_VARIABLE": "production_value" }
+	// "vars": { "GOOGLE_MAPS_API_KEY": "production_value" }
 	/**
 	 * Note: Use secrets to store sensitive data.
 	 * https://developers.cloudflare.com/workers/configuration/secrets/
