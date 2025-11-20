@@ -18,7 +18,7 @@ export default function MyMap({lat, lng, apiKey, restaurants}: {lat: number, lng
             <Map
                 className='w-[50rem] h-[50rem]'
                 defaultCenter={{lat: lat, lng: lng}}
-                defaultZoom={15}
+                defaultZoom={11}
                 gestureHandling='greedy'
                 disableDefaultUI
             >

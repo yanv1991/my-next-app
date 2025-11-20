@@ -31,6 +31,9 @@
 			"database_id": "d7b28694-0859-47f1-8282-a5068efcb1bc"
 		}
 	],
+	"ai": {
+		"binding": "AI"
+	}
 	/*"durable_objects": {
 		"bindings": [
 			{

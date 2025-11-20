@@ -13,6 +13,7 @@ interface CloudflareEnv extends Cloudflare.Env {
     CACHE: any;
     COUNTER: DurableObjectNamespace;
     prisma_demo_db: D1Database;
+    AI: Ai;
 }
 
 // Begin runtime types
